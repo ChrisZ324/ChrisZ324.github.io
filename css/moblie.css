@@ -1,0 +1,74 @@
+/******************* MOBLIE VERSION *******************/
+@media screen and (max-width: 576px) {
+  /* Nav bar */
+  .logo {
+    height: 45px;
+  }
+  .main-nav-list {
+    display: none;
+  }
+
+  /******************* MOBLIE VERSION - RESPONSIVE FOR HOME PAGE  *******************/
+  /* introduction section */
+  #introduction .container {
+    display: block;
+  }
+  /* Menu section */
+  #Menu .food-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Update Menu section */
+  #Update-Menu .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--main-color);
+  }
+
+  .Update-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  /******************* MOBLIE VERSION - EXIST THROUGH ALL THREE PAGES *******************/
+  /* contact section */
+  .email h2 p {
+    font-size: 5px;
+  }
+
+  .connect {
+    display: none;
+  }
+  .medias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50 px;
+  }
+
+  .contact .container {
+    gap: 15px;
+  }
+
+  /******************* MOBLIE VERSION - RESPONSIVE FOR ISSUE PAGE  *******************/
+  /* SDG section */
+  #SDG .container,
+  #Statistic,
+  .container,
+  .SDG-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+
+  /******************* MOBLIE VERSION - RESPONSIVE FOR ISSUE PAGE  *******************/
+  /* western combo section */
+  #western-combo,
+  .combo-dish,
+  #Asian-combo .combo-dish {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+}

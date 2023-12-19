@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+
+    <title>Food website</title>
+
+    <!-- CSS - to style the desktop website -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- CSS - moblie responsive for all three pages -->
+    <link rel="stylesheet" href="/css/moblie.css">
+
+    <!-- javasript -->
+    <script src="/js/script.js"></script>
+
+    <!-- Bootstrap CSS - a shortcut to access CSS without actually coding CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Bootstrap javascript - a shortcut to access javascript without actually coding javascript -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Responsive Web Design - The Viewport  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <body>
+    <!-- Header/nav bar -->
+    <header class="header">
+      <a href="/html/Home.html">
+        <img class="logo" alt="website logo" src="/img/logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="/html/Home.html">Home</a></li>
+          <li><a class="main-nav-link" href="/html/Issue.html">Issue</a></li>
+          <li><a class="main-nav-link" href="/html/Menu.html">Menu</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+          <li>
+            <!-- translation button - used boostrap to function  -->
+            <div class="translation">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Eng
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Vn</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About section - used bootstrap to function the slideshow -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100 image"
+            src="/img/canteen/canteen-1.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 image"
+            src="/img/canteen/canteen-2.jpg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 image"
+            src="/img/canteen/canteen-3.jpg"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Introduction section -->
+    <section id="introduction">
+      <div class="container ">
+        <div class="intro-img">
+          <img
+            class="intro-img"
+            src="/img/Food/intro food image.jpg"
+            alt="intro image"
+          />
+        </div>
+        <div class="intro">
+          <h1 class="title">Title</h1>
+          <p>
+            Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim
+            Lorem sint. Veniam sint duis incididunt do esse magna mollit
+            excepteur laborum qui. Id id reprehenderit sit est eu aliqua
+            occaecat quis et velit excepteur laborum mollit dolore eiusmod.
+            Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+            mollit pariatur. Deserunt non laborum enim et cillum eu deserunt
+            excepteur ea incididunt minim occaecat.
+          </p>
+          <!-- Button that move to the issue page - used boostrap to create the button -->
+          <a class="btn btn-primary" href="/html/Issue.html" role="button"
+            >Issue</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="Menu">
+      <h1 class="menu-title">Title</h1>
+      <div class="food-container">
+        <div class="food">
+          <div class="food-img">
+            <a>
+              <img src="/img/Food/Food 1.png" alt="food dish 1" />
+            </a>
+          </div>
+          <h3 class="Food-name">
+            <a>Food name</a>
+          </h3>
+          <div class="content">
+            <p>
+              Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua
+              anim Lorem sint. Veniam sint duis incididunt do esse magna mollit
+              excepteur laborum qui. Id id reprehenderit sit est eu aliqua
+              occaecat quis et velit excepteur laborum mollit dolore eiusmod.
+              Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+              mollit pariatur. Deserunt non laborum enim et cillum eu deserunt
+              excepteur ea incididunt minim occaecat.
+            </p>
+            <!-- Button to move menu page - used boostrap to create the button-->
+            <a class="btn btn-success" href="/html/Menu.html" role="button"
+              >More info</a
+            >
+          </div>
+        </div>
+        <div class="food">
+          <div class="food-img">
+            <a>
+              <img src="/img/Food/Food 2.png" alt="food dish 2" />
+            </a>
+          </div>
+          <h3 class="Food-name">
+            <a>Food name </a>
+          </h3>
+          <div class="content">
+            <p>
+              Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua
+              anim Lorem sint. Veniam sint duis incididunt do esse magna mollit
+              excepteur laborum qui. Id id reprehenderit sit est eu aliqua
+              occaecat quis et velit excepteur laborum mollit dolore eiusmod.
+              Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+              mollit pariatur. Deserunt non laborum enim et cillum eu deserunt
+              excepteur ea incididunt minim occaecat.
+            </p>
+            <!-- Button to move menu page - used boostrap to create the button-->
+            <a class="btn btn-success" href="/html/Menu.html" role="button"
+              >More info</a
+            >
+          </div>
+        </div>
+        <div class="food">
+          <div class="food-img">
+            <a>
+              <img src="/img/Food/Food 3.png" alt="food dish 3" />
+            </a>
+          </div>
+          <h3 class="Food-name">
+            <a>Food name </a>
+          </h3>
+          <div class="content">
+            <p>
+              Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua
+              anim Lorem sint. Veniam sint duis incididunt do esse magna mollit
+              excepteur laborum qui. Id id reprehenderit sit est eu aliqua
+              occaecat quis et velit excepteur laborum mollit dolore eiusmod.
+              Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+              mollit pariatur. Deserunt non laborum enim et cillum eu deserunt
+              excepteur ea incididunt minim occaecat.
+            </p>
+            <!-- Button to move menu page - used boostrap to create the button-->
+            <a class="btn btn-success" href="/html/Menu.html" role="button"
+              >More info</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Update Menu section -->
+    <section id="Update-Menu">
+      <div class="update">
+        <div class="container">
+          <!-- Food survey  -->
+          <form id="survey-form">
+            <h1>Food Suggestion Survey</h1>
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+            <label for="message">Message</label>
+            <textarea 
+              class="input-textarea"
+              type="text"
+              name="message"
+              id="message"
+              class="form-control"
+              placeholder="Enter your comment here..."
+              required
+            ></textarea>
+            
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="btn btn-primary">
+                Send
+              </button>
+            </div>
+          </form>
+          
+          <!-- Update menu -->
+          <div class="Update-menu">
+            <div class="update-food">
+              <div class="food-img">
+                <a>
+                  <img src="/img/Food/Food update 1.jpg" alt="update food 1" />
+                </a>
+              </div>
+              <h3 class="Food-name">
+                <a>Food name </a>
+              </h3>
+              <div class="content">
+                <p>
+                  Cillum ad ut irure tempor velit nostrud occaecat ullamco
+                  aliqua anim Lorem sint. 
+                </p>
+              </div>
+            </div>
+            <div class="update-food">
+              <div class="food-img">
+                <a>
+                  <img src="/img/Food/Food update 2.jpg" alt="update food 2" />
+                </a>
+              </div>
+              <h3 class="Food-name">
+                <a>Food name </a>
+              </h3>
+              <div class="content">
+                <p>
+                  Cillum ad ut irure tempor velit nostrud occaecat ullamco
+                  aliqua anim Lorem sint. 
+                </p>
+              </div>
+            </div>
+            <div class="update-food">
+              <div class="food-img">
+                <a>
+                  <img src="/img/Food/Food update 3.jpg" alt="update food 3" />
+                </a>
+              </div>
+              <h3 class="Food-name">
+                <a>Food name </a>
+              </h3>
+              <div class="content">
+                <p>
+                  Cillum ad ut irure tempor velit nostrud occaecat ullamco
+                  aliqua anim Lorem sint. 
+                </p>
+              </div>
+            </div>
+            <div class="update-food">
+              <div class="food-img">
+                <a>
+                  <img src="/img/Food/Food update 4.jpg" alt="update food 4" />
+                </a>
+              </div>
+              <h3 class="Food-name">
+                <a>Food name </a>
+              </h3>
+              <div class="content">
+                <p>
+                  Cillum ad ut irure tempor velit nostrud occaecat ullamco
+                  aliqua anim Lorem sint.   
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="contact-part">
+            <a href="/html/Home.html">
+              <img class="logo" alt="website logo" src="/img/logo.png" />
+            </a>
+            <div class="Email">
+              <h2>Email</h2>
+              <p>info@ais.edu.vn</p>
+              <p>secondary.office@ais.edu.vn</p>
+            </div>
+            <div class="Address">
+              <h2>Address</h2>
+              <p>
+                220 Nguyen Van Tao Street, Nha Be District, Ho Chi Minh City,
+                Vietnam
+              </p>
+            </div>
+          </div>
+          <div class="social-media">
+            <h1 class="connect">Connect with us</h1>
+            <div class="medias">
+              <a href="#">
+                <img
+                  class="icon"
+                  alt="website logo"
+                  src="/img/social media/facebook.webp"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="icon"
+                  alt="website logo"
+                  src="/img/social media/instagram.png"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="icon"
+                  alt="website logo"
+                  src="/img/social media/twitter.png"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="icon"
+                  alt="website logo"
+                  src="/img/social media/youtube.png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer">
+      <div class="copyright">
+        <p> © Eagle cafe - Brought to you by Eagle cafe </p>
+    </footer>
+  </body>
+</html>

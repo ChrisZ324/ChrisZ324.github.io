@@ -1,0 +1,282 @@
+/********** PAGE DEFAULT *********/
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+:root {
+  --main-color: #637549;
+  --primary-color: #cfb997;
+  --secondary-color: #9ba17b;
+  --background-color: #fbd6a5;
+  --color-gray: #f0f0f0;
+}
+/******************* EXIST FOR ALL PAGES  *******************/
+
+/********** NAV-BAR *********/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  position: relative;
+}
+.nav-bar {
+  background-color: var(--main-color);
+  overflow: hidden;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  float: left;
+}
+
+.translation {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  gap: 50px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: white;
+}
+.logo {
+  height: 10rem;
+}
+
+/****************************** HOME PAGE******************************/
+
+/********** ABOUT SECTION *********/
+.image {
+  height: 700px;
+  width: 500px;
+}
+
+/**Introduction section **/
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.intro-img {
+  width: 100%;
+}
+.introduction .container h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#introduction {
+  padding: 15px 15px;
+}
+
+/********** MENU SECTION *********/
+.menu-title {
+  text-align: center;
+  padding: 20px;
+}
+
+#Menu {
+  background: var(--main-color);
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 35px;
+}
+
+.food {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.food-img img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.Food-name {
+  padding: 10px 10px;
+}
+.content {
+  padding: 10px 10px;
+}
+
+/** Update Menu section - used for HOME PAGE and MENU PAGE **/
+.update {
+  background-color: var(--secondary-color);
+}
+
+/* Survey */
+#survey-form {
+  background-color: white;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form {
+  padding: 10px;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  border-radius: 15px;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+/* Update menu */
+.Update-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 15px;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/******************* EXIST FOR ALL PAGES  *******************/
+
+/********** CONTACT SECTION *********/
+.contact {
+  background-color: var(--color-gray);
+}
+
+.connect {
+  text-align: center;
+  padding: 10px;
+}
+
+.icon {
+  height: 100px;
+  padding: 15px;
+}
+
+/********** FOOTER  SECTION *********/
+footer {
+  padding: 10px;
+}
+
+/****************************** ISSUE PAGE******************************/
+
+/********** SDG SECTIONS *********/
+#SDG {
+  background-color: var(--secondary-color);
+}
+.SDG-intro {
+  box-shadow: 1px 1px 5px #d0d0d0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.SDG-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.SDG {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  gap: 25px;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.SDG-img img {
+  width: 100%;
+}
+
+.SDG-content {
+  display: grid;
+  grid-template-columns: 2fr, 2fr;
+}
+
+hr.solid {
+  border-bottom: 0.25px solid #bbb;
+}
+
+/********** STATISTIC SECTIONS *********/
+#Statistic {
+  background-color: var(--main-color);
+}
+
+.graph-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/****************************** MENU PAGE******************************/
+
+/********** FOOD SECTIONS *********/
+#Asian-combo,
+#western-combo,
+#western-food {
+  background-color: var(--main-color);
+}
+
+.combo-dish {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 15px;
+}
+
+#western-food,
+#Asian-food {
+  background-color: var(--secondary-color);
+}
+
+.dish {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
